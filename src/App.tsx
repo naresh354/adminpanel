@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Dashboard from "./Pages/Dashboard/Index";
-import { SetUpContainer } from "./Pages/Transaction";
+import { SetUpContainer } from "./Pages/Setup";
 import Header from "./Component/Header";
 import { ThemeProvider, Typography } from '@mui/material';
 import { createMuiTheme } from '@mui/material/styles';

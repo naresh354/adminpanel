@@ -2,18 +2,10 @@ import {
   Box,
   Button,
   Card,
-  CardActionArea,
   CardContent,
   Divider,
   Grid,
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Typography,
+  Typography
 } from "@mui/material";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import CustomizedProgressBars from "./ProgressBar"

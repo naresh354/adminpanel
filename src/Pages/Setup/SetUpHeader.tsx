@@ -32,7 +32,7 @@ export const SetUpHeader = () => {
           }}
           placeholder="Search"
           // onChange={(e: any) => handleInputChange(e)}
-          onKeyDown={(e) => e.key === "Enter" && e.preventDefault()}
+          onKeyDown={(e: any) => e.key === "Enter" && e.preventDefault()}
         />
       </Paper>
     </Box>

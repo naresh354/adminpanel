@@ -12,14 +12,9 @@ import React from "react";
 import AddIcon from "@mui/icons-material/Add";
 import FilterListIcon from "@mui/icons-material/FilterList";
 export const SetUpSecondaryHeader = () => {
-  const [alignment, setAlignment] = React.useState("");
+  
   const [titleChange, setTitleChange] = React.useState("");
-  const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
-    newAlignment: string
-  ) => {
-    setAlignment(newAlignment);
-  };
+  
   const title = [
     { id: 1, title: "Title1" },
     { id: 2, title: "Title2" },
@@ -37,9 +32,9 @@ export const SetUpSecondaryHeader = () => {
     <Box sx={{ display: "flex", justifyContent: "space-between" }}>
       <ToggleButtonGroup
         color="primary"
-        value={alignment}
+       //  value={alignment}
         exclusive
-        onChange={handleChange}
+        // onChange={handleChange}
         aria-label="Platform"
         sx={{ height: "30px" }}
       >

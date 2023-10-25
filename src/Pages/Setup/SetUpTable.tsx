@@ -11,11 +11,9 @@ import {
   TableCell,
   TableContainer,
   TableHead,
-  TablePagination,
   TableRow,
   Typography,
 } from "@mui/material";
-import { ListComponent } from "./ListComponent";
 import ModeEditOutlineIcon from "@mui/icons-material/ModeEditOutline";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
@@ -213,7 +211,7 @@ export const SetUpTable = () => {
           </TableHead>
           <TableBody>
             {sortedRows.length > 0 &&
-              sortedRows.map((row: any, index: number) => (
+              sortedRows.map((row: any) => (
                 <TableRow
                   key={row.id}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -334,18 +332,6 @@ export const SetUpTable = () => {
         </Table>
         <Divider />
 
-        {/* {sortedRows.length > 0 && (
-          <TablePagination
-            sx={muiCustomization.tablePagination}
-            rowsPerPageOptions={ROW_PER_OPTIONS}
-            component="div"
-            count={100}
-            rowsPerPage={10}
-            page={5}
-            onPageChange={handleChangePage}
-            onRowsPerPageChange={handleChangeRowsPerPage}
-          />
-        )} */}
       </TableContainer>
       <Box
         sx={{

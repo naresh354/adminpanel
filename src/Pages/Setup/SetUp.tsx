@@ -1,4 +1,3 @@
-import React from 'react'
 import { SetUpHeader } from './SetUpHeader'
 import { SetUpSecondaryHeader } from './SetUpSecondaryHeader'
 import { SetUpTable } from './SetUpTable'
